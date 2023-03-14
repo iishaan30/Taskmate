@@ -13,6 +13,8 @@
       rgb(47, 154, 241) 100%
     );
   }
+
+
   .todo-app {
     display: flex;
     flex-direction: column;

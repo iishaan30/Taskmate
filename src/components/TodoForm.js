@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 function ToForm(props) {
 
-  const [input, setInput] = useState(props.edit ? props.edit.value : '');
+const [input, setInput] = useState(props.edit ? props.edit.value : '');
 const inputRef = useRef(null)
 
 useRef(() => {
@@ -23,6 +23,8 @@ const handleSubmit = e => {
 
   setInput('');
 };
+
+
 
   return (
     <form className="todo-form" onSubmit={handleSubmit}>
