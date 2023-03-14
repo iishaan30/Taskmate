@@ -1,7 +1,7 @@
 import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 
 
 
