@@ -1,7 +1,8 @@
 import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
+
 
 
 function App() {

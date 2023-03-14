@@ -7,6 +7,7 @@ const Navbar = () => {
   return (
     <>
         <nav className='main-nav'>
+        
         <div className='logo'>
             <h2>TaskMate</h2>
         </div>
@@ -25,12 +26,13 @@ const Navbar = () => {
                     <a href="#">Team</a>
                 </li>
             </ul>
-            <div className='hamburger-menu'>
+            
+        </div>
+        <div className='hamburger-menu'>
                 <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                    <GiHamburgerMenu />
+                    <GiHamburgerMenu id="hamburger"/>
                 </a>
             </div>
-        </div>
     </nav>
     </>
   )
