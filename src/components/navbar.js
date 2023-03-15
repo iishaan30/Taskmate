@@ -10,6 +10,11 @@ const Navbar = () => {
         
         <div className='logo'>
             <h2>TaskMate</h2>
+            <div className='hamburger-menu'>
+                <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                    <GiHamburgerMenu id="hamburger"/>
+                </a>
+            </div>
         </div>
 
         <div className = {showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}> 
@@ -28,11 +33,7 @@ const Navbar = () => {
             </ul>
             
         </div>
-        <div className='hamburger-menu'>
-                <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                    <GiHamburgerMenu id="hamburger"/>
-                </a>
-            </div>
+        
     </nav>
     </>
   )

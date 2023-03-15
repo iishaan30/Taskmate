@@ -35,6 +35,7 @@ function TodoList() {
             return;
         }
         setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)))
+
     }
 
     const removeTodo = id => {
