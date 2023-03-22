@@ -7,7 +7,12 @@
 }
 
 body {
-  background: black
+  background: linear-gradient(
+    90deg,
+    rgb(207, 159, 255) 0%,
+    rgb(143, 175, 217) 100%
+   
+  )
 }
 
 .todo-app {
@@ -33,7 +38,6 @@ h1 {
 
 .complete {
   text-decoration: line-through;
-  opacity: 0.4;
 }
 
 .todo-form {
@@ -45,41 +49,45 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #c99a9a;
+  
   outline: none;
   width: 320px;
-  background: transparent;
-  color: #faf7f7da;
-  
+  background: aliceblue;
+  color: #010101da;
+  font-size: 19px;
   
 }
 
 .todo-input::placeholder {
-  color: #fcf9f9;
-  font-size: medium;
+  color: #090909;
+  font-size: 19px;
 
 }
 
 .todo-button {
-  padding: 16px;
+  padding: 15px;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  outline: #040404;
-  margin: 6px;
+ 
+  
   background: linear-gradient(
     90deg,
     rgb(13, 98, 203) 0%,
     rgb(47, 48, 133) 100%
   );
   color: #fdf8f8;
+  font-size: 19px;
   text-transform: capitalize;
 }
 
 .todo-input.edit {
-  border: 2px solid #de9c9c;
-  margin: 2px;
-  font-size: medium;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  
+  outline: none;
+  width: 320px;
+  
 }
 
 .todo-button.edit {
@@ -88,8 +96,7 @@ h1 {
     rgb(4, 70, 116) 0%,
     rgba(17, 122, 255, 1) 100%
   );
- 
-  padding: 16px 22px;
+  padding: 16px;
 }
 
 .todo-container {
@@ -101,57 +108,56 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
-  color: #fff;
+  margin: auto;
+  font-size: 19px;
+  color: #050505;
   background: linear-gradient(
     90deg,
-    rgb(154, 215, 130) 0%,
-    rgb(104, 223, 209) 100%
+    rgb(127, 215, 208) 0%,
+    rgb(127, 215, 183) 100%
   );
-
-  padding: 16px;
-  border-radius: 10px;
-  width: 58%;
+  padding: 12px;
+  width: 30%;
 }
 
-.todo-row:nth-child(4n + 1) {
+/* .todo-row:nth-child(4n + 1) {
   background: linear-gradient(
     90deg,
-    rgb(154, 215, 130) 0%,
-    rgb(104, 223, 209) 100%
-  );
-}
+    rgb(127, 203, 215) 0%,
+    rgb(127, 215, 183) 100%
+  )
+} */
 
-.todo-row:nth-child(4n + 2) {
+/* .todo-row:nth-child(4n + 2) {
   background: linear-gradient(
     90deg,
-    rgb(154, 215, 130) 0%,
-    rgb(104, 223, 209) 100%
-  );
+    rgb(127, 215, 208) 0%,
+    rgb(127, 215, 183) 100%
+  )
 }
 
 .todo-row:nth-child(4n + 3) {
   background: linear-gradient(
     90deg,
-    rgb(154, 215, 130) 0%,
-    rgb(104, 223, 209) 100%
-  );
-}
+    rgb(127, 215, 208) 0%,
+    rgb(127, 215, 183) 100%
+  )
+} */
 
 
 .icons {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 26px;
   cursor: pointer;
 }
 
 .delete-icon {
-  margin-right: 5px;
-  color: #fff;
+  margin-right: 6px;
+  color: #060606;
 }
 
 .edit-icon {
-  color: #fff;
+  color: #0c0c0c;
 }
 

@@ -44,14 +44,15 @@ function TodoList() {
         setTodos(removeArr);
     }
 
-    const completeTodo = id => {
-            let updatedTodos = todos.map(todo => {
-                if (todo.id === id) {
-                    todo.isComplete = !todo.isComplete
-                }
-                return todo
-            });
-            setTodos(updatedTodos);
+
+    const onToggle = id => {
+        let updatedTodos = todos.map(todo => {
+            if (todo.id === id) {
+                todo.isComplete = !todo.isComplete
+            }
+            return todo
+        });
+        setTodos(updatedTodos);
     }
 
     useEffect(() => {
@@ -61,7 +62,7 @@ function TodoList() {
   return (
     <div>
         <TodoForm  onSubmit={addTodo}/>
-        <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+        <Todo todos={todos} removeTodo={removeTodo} updateTodo={updateTodo} onToggle={onToggle}/>
     </div>
   )
 }

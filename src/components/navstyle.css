@@ -2,13 +2,9 @@
     display: grid;
     height: 5rem;
     width: 100%;
-    color: rgb(9, 114, 114);
+    color: rgb(226, 67, 221, 0.763);
     font-size: 24px;
-    background: linear-gradient(
-      90deg,
-      rgb(13, 13, 13) 0%,
-      rgb(37, 184, 138) 100%
-    );
+    background: rgb(254, 253, 251);
     grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
 }
 .main-nav .hamburger-menu {
@@ -40,6 +36,11 @@
     text-decoration: none;
     font-size: 18px;
     color: rgb(10, 10, 10);
+    font-weight: bold;
+
+}
+.menu-link li :hover{
+    color: pink;
 }
 .hamburger-menu{
     display: flex;
@@ -52,7 +53,7 @@
 }
 
 #hamburger{
-    color: rgb(9, 114, 114);
+    color: rgb(226, 67, 221, 0.763);
 }
 
 @media (max-width: 1080px) {
@@ -83,7 +84,7 @@
         z-index: 99;
     }
     .mobile-menu-link {
-        background-color: rgb(73, 135, 145);
+        background-color: rgb(73, 209, 207);
         height: 20rem;
         display: grid;
         grid-column: 2/5;
@@ -94,7 +95,7 @@
         
     }
     .mobile-menu-link :hover{
-        color: aliceblue;
+        color: pink;
     }
     .mobile-menu-link ul {
         height: 20rem;
