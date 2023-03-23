@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "./navstyle.css";
 import {GiHamburgerMenu} from "react-icons/gi";
 
+
 const Navbar = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
